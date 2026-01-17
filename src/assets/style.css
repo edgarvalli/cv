@@ -1,0 +1,8 @@
+@import 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined';
+@import 'tailwindcss';
+
+@theme {
+    --color-background-light: #fafafa;
+    --color-background-dark: #22262a;
+}
+
