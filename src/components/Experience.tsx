@@ -14,7 +14,7 @@ export function ExperienceCard(props: Experience) {
     const app = useContext(AppContext);
     return (
         <>
-            <div className="p-4 border-l border-l-teal-600">
+            <div className="p-4 border-l border-l-indigo-600">
                 <div className="bg-white p-4 rounded-2xl shadow-xs dark:bg-gray-800">
                     <div className="flex justify-between">
                         <h1 className="font-bold dark:text-white">{props.company}</h1>
@@ -23,7 +23,7 @@ export function ExperienceCard(props: Experience) {
                             dark:bg-gray-900
                             rounded-2xl">{props.period}</span>
                     </div>
-                    <h2 className="text-teal-600">{props.position}</h2>
+                    <h2 className="text-indigo-600">{props.position}</h2>
                     <div className="mt-5 mb-5 flex gap-3">
                         <h4 className="font-bold dark:text-gray-500">
                             {app?.lang === "es" ? "Jefe Directo" : "Manager"}:
@@ -42,7 +42,7 @@ export function ExperienceCard(props: Experience) {
                 </div>
             </div>
             <div>
-                <div className="rounded-full w-3 h-3 bg-teal-600 -ms-1.5"></div>
+                <div className="rounded-full w-3 h-3 bg-indigo-600 -ms-1.5"></div>
             </div>
         </>
     )
@@ -53,8 +53,8 @@ export function Experience() {
     const jobList = (app?.lang === "es" ? jobs.es : jobs.en) as Experience[];
     return (
         <section className="mt-20" id="experience">
-            <h1 className="font-bold text-2xl flex items-center mb-10">
-                <Icon name="collections_bookmark" className="me-2 text-teal-700" />
+            <h1 className="font-bold text-2xl flex items-center mb-10 dark:text-white">
+                <Icon name="collections_bookmark" className="me-2 text-indigo-700" />
                 {app?.lang === "es" ? "Experiencia Profesional" : "Profesional Experience"}
             </h1>
             {jobList.map((job) => <ExperienceCard {...job} key={job.company} />)}

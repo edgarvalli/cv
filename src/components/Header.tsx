@@ -5,9 +5,9 @@ function LangButton(props: { text: string, lang?: string, onPress?: (e: MouseEve
     return (
         <button
             className={`
-                ${props.lang === props.text ? "text-teal-600" : "text-gray-600"}
-                cursor-pointer hover:text-teal-300 
-                active:text-teal-900 duration-150
+                ${props.lang === props.text ? "text-indigo-600" : "text-gray-600"}
+                cursor-pointer hover:text-indigo-300 
+                active:text-indigo-900 duration-150
                 `}
             onClick={props.onPress}>
             {props.text}
@@ -37,7 +37,7 @@ export function Header() {
         <header className="h-16">
             <div className="lg:hidden h-full p-4 flex justify-between dark:bg-gray-900">
                 <div className="flex items-center">
-                    <div className="bg-teal-700 p-1.5 rounded-2xl text-white">
+                    <div className="bg-indigo-700 p-1.5 rounded-2xl text-white">
                         <span className="material-symbols-outlined">
                             engineering
                         </span>
@@ -47,10 +47,10 @@ export function Header() {
                 <Lang />
                 <button
                     className="
-                        bg-teal-700 text-white 
+                        bg-indigo-700 text-white
                         flex items-center justify-center 
                         cursor-pointer p-2 w-40 rounded-3xl
-                        hover:bg-teal-600 active:bg-teal-900 duration-300
+                        hover:bg-indigo-600 active:bg-indigo-900 duration-300
                         "
                     onClick={() => print()}
                 >
@@ -67,7 +67,7 @@ export function Header() {
             >
                 <div className="flex lg:items-center justify-center  lg:w-[90%] m-auto">
                     <div className="flex items-center">
-                        <div className="bg-teal-700 p-1.5 rounded-2xl text-white">
+                        <div className="bg-indigo-700 p-1.5 rounded-2xl text-white">
                             <span className="material-symbols-outlined">
                                 engineering
                             </span>
@@ -95,10 +95,10 @@ export function Header() {
                         <Lang />
                         <button
                             className="
-                        bg-teal-700 text-white 
+                        bg-indigo-700 text-white 
                         flex items-center justify-center 
                         cursor-pointer p-2 w-40 rounded-3xl
-                        hover:bg-teal-600 active:bg-teal-900 duration-300
+                        hover:bg-indigo-600 active:bg-indigo-900 duration-300
                         "
                             onClick={() => print()}
                         >

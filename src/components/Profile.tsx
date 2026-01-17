@@ -25,7 +25,7 @@ export function ContactList() {
 export function Description() {
     const app = useContext(AppContext);
 
-    const className = "text-[14px] text-teal-600 text-start"
+    const className = "text-[14px] text-indigo-600 text-start"
     if (app?.lang === "es") return (
         <p className={className}>
             Soy una persona proactiva, responsable y adaptable, con facilidad para desempeñarme en distintos entornos y afrontar nuevos retos.
@@ -55,13 +55,13 @@ export function Profile() {
                 <div className="text-center">
                     <h1
                         className="
-                            bg-teal-100 text-teal-900 text-[12px]
+                            bg-indigo-100 text-indigo-900 text-[12px]
                             p-0.5 w-full text-center rounded-4xl font-bold
                             "
                     >
                         {app?.lang === "es" ? "INGENIERO ADMINISTRADOR DE SISTEMAS" : "Systems Administration Engineer"}
                     </h1>
-                    <h2 className="mt-4 text-2xl font-bold dark:text-white">Edgar Eduardo Valli Muñoz</h2>
+                    <h2 className="mt-4 text-2xl font-bold dark:text-white">Edgar Valli</h2>
                     <ContactList />
 
                     <Description />

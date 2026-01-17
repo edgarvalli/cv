@@ -10,7 +10,7 @@ export default [
         icon: "phone"
     },
     {
-        text: "Nueva Encarnación 125, Apodaca N,L.",
+        text: "Residencial Apodaca, Apodaca N,L.",
         href: "#",
         icon: "add_location_alt"
     }

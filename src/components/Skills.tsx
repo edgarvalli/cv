@@ -25,7 +25,7 @@ export function Skills() {
     return (
         <section className="mt-20" id="skills">
             <h1 className="font-bold text-2xl flex items-center mb-10 dark:text-white">
-                <Icon name="collections_bookmark" className="me-2 text-teal-700 " />
+                <Icon name="collections_bookmark" className="me-2 text-indigo-700 " />
                 {app?.lang === "es" ? "Conocimientos": "Core Competencies"}
             </h1>
             <div className="lg:grid lg:grid-cols-3 gap-4">
