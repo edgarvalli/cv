@@ -1,3 +1,4 @@
+import { Experience } from "./Experience";
 import { Header } from "./Header";
 import { Profile } from "./Profile";
 import { Skills } from "./Skills";
@@ -9,6 +10,7 @@ export default function Curriculum() {
             <main className="lg:w-[60%] w-[90%] m-auto">
                 <Profile />
                 <Skills />
+                <Experience />
             </main>
         </div>
     )

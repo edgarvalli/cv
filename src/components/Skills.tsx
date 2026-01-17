@@ -1,5 +1,7 @@
 import { Icon } from "./Icon";
 import skills from "../data/skills";
+import { useContext } from "react";
+import { AppContext } from "../context/context";
 
 export function SkillItem({ items }: { items: string[] }) {
     const Item = (props: any) => {
@@ -19,11 +21,12 @@ export function SkillItem({ items }: { items: string[] }) {
 }
 
 export function Skills() {
+    const app = useContext(AppContext);
     return (
         <section className="mt-20" id="skills">
-            <h1 className="font-bold text-2xl flex items-center">
+            <h1 className="font-bold text-2xl flex items-center mb-10">
                 <Icon name="collections_bookmark" className="me-2 text-teal-700" />
-                Conocimientos
+                {app?.lang === "es" ? "Conocimientos": "Core Competencies"}
             </h1>
             <div className="lg:grid lg:grid-cols-3 gap-4">
                 {
