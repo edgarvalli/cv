@@ -35,7 +35,7 @@ export function Header() {
 
     return (
         <header className="h-16">
-            <div className="lg:hidden h-full p-4 flex justify-between dark:bg-gray-900">
+            <div className="fixed w-full h-16 lg:hidden  p-4 flex justify-between dark:bg-gray-900">
                 <div className="flex items-center">
                     <div className="bg-indigo-700 p-1.5 rounded-2xl text-white">
                         <span className="material-symbols-outlined">
