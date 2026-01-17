@@ -15,24 +15,27 @@ export function ExperienceCard(props: Experience) {
     return (
         <>
             <div className="p-4 border-l border-l-teal-600">
-                <div className="bg-white p-4 rounded-2xl shadow-xs">
+                <div className="bg-white p-4 rounded-2xl shadow-xs dark:bg-gray-800">
                     <div className="flex justify-between">
-                        <h1 className="font-bold">{props.company}</h1>
-                        <span className="bg-gray-200 p-1 ps-2 pe-2 text-gray-500 rounded-2xl">{props.period}</span>
+                        <h1 className="font-bold dark:text-white">{props.company}</h1>
+                        <span className="
+                            bg-gray-200 p-1 ps-2 pe-2 text-gray-500 
+                            dark:bg-gray-900
+                            rounded-2xl">{props.period}</span>
                     </div>
                     <h2 className="text-teal-600">{props.position}</h2>
                     <div className="mt-5 mb-5 flex gap-3">
-                        <h4 className="font-bold">
+                        <h4 className="font-bold dark:text-gray-500">
                             {app?.lang === "es" ? "Jefe Directo" : "Manager"}:
                         </h4>
-                        <span className="text-gray-600">
+                        <span className="text-gray-600 dark:text-gray-100">
                             {props.manager}
                         </span>
                     </div>
                     <ul className="list-disc p-4">
                         {
                             props.activities.map(act => (
-                                <li className="text-gray-500" key={act}>{act}</li>
+                                <li className="text-gray-500 dark:text-gray-200" key={act}>{act}</li>
                             ))
                         }
                     </ul>

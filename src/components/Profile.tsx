@@ -61,7 +61,7 @@ export function Profile() {
                     >
                         {app?.lang === "es" ? "INGENIERO ADMINISTRADOR DE SISTEMAS" : "Systems Administration Engineer"}
                     </h1>
-                    <h2 className="mt-4 text-2xl font-bold">Edgar Eduardo Valli Muñoz</h2>
+                    <h2 className="mt-4 text-2xl font-bold dark:text-white">Edgar Eduardo Valli Muñoz</h2>
                     <ContactList />
 
                     <Description />

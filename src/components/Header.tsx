@@ -35,14 +35,14 @@ export function Header() {
 
     return (
         <header className="h-16">
-            <div className="lg:hidden h-full p-4 flex justify-between">
+            <div className="lg:hidden h-full p-4 flex justify-between dark:bg-gray-900">
                 <div className="flex items-center">
                     <div className="bg-teal-700 p-1.5 rounded-2xl text-white">
                         <span className="material-symbols-outlined">
                             engineering
                         </span>
                     </div>
-                    <h1 className="text-xl font-bold tracking-tight ms-4">Edgar Valli</h1>
+                    <h1 className="text-xl font-bold tracking-tight ms-4 dark:text-white">Edgar Valli</h1>
                 </div>
                 <Lang />
                 <button
@@ -61,7 +61,8 @@ export function Header() {
                 </button>
             </div>
             <div className="
-                fixed w-full p-4 border-b border-gray-200
+                fixed w-full p-4 border-b border-gray-200 
+                dark:bg-gray-900 dark:border-0
                 bg-background-light overflow-hidden hidden md:flex"
             >
                 <div className="flex lg:items-center justify-center  lg:w-[90%] m-auto">
@@ -71,7 +72,7 @@ export function Header() {
                                 engineering
                             </span>
                         </div>
-                        <h1 className="text-xl font-bold tracking-tight ms-4">Edgar Valli</h1>
+                        <h1 className="text-xl font-bold tracking-tight ms-4 dark:text-white">Edgar Valli</h1>
                     </div>
                     <ul className="flex gap-4 m-auto font-bold text-[14px] text-gray-600">
                         <li>
