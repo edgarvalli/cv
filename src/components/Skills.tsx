@@ -1,5 +1,5 @@
 import { Icon } from "./Icon";
-import skills from "../data/skills";
+import {skills} from "../data/skills";
 import { useContext } from "react";
 import { AppContext } from "../context/context";
 
@@ -22,6 +22,7 @@ export function SkillItem({ items }: { items: string[] }) {
 
 export function Skills() {
     const app = useContext(AppContext);
+    const skillList = app?.lang === "es" ? skills.es : skills.en
     return (
         <section className="mt-20" id="skills">
             <h1 className="font-bold text-2xl flex items-center mb-10 dark:text-white">
@@ -30,7 +31,7 @@ export function Skills() {
             </h1>
             <div className="lg:grid lg:grid-cols-3 gap-4">
                 {
-                    skills.map((sk, i) => {
+                    skillList.map((sk, i) => {
                         return (
                             <div 
                                 key={"skill_" + i} 
@@ -39,7 +40,7 @@ export function Skills() {
                                     dark:bg-gray-800
                                     ${sk.full && "col-span-3"}
                                 `}>
-                                <h1 className="font-bold text-gray-800 mb-6 dark:text-white">{sk.titulo}</h1>
+                                <h1 className="font-bold text-gray-800 mb-6 dark:text-white">{sk.title}</h1>
                                 <SkillItem items={sk.items as string[]} />
                             </div>
                         )
