@@ -1,5 +1,10 @@
 @import 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined';
+@import 'https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
 @import 'tailwindcss';
+
+* {
+    font-family: Roboto, sans-serif, monospace;
+}
 
 @theme {
     --color-background-light: #fafafa;
