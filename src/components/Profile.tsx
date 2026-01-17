@@ -7,7 +7,7 @@ export function ContactList() {
     const Item = (props: { text?: string, href?: string, icon?: string }) => {
         return (
             <li className="mb-2">
-                <a href={props.href} className="text-gray-600 flex items-center gap-4">
+                <a href={props.href} className="text-gray-700 flex items-center gap-4">
                     <Icon name={props.icon ?? "mail"} />
                     {props.text}
                 </a>
@@ -25,7 +25,7 @@ export function ContactList() {
 export function Description() {
     const app = useContext(AppContext);
 
-    const className = "text-[14px] text-indigo-600 text-start"
+    const className = "text-[14px] text-gray-500 text-start"
     if (app?.lang === "es") return (
         <p className={className}>
             Soy una persona proactiva, responsable y adaptable, con facilidad para desempeñarme en distintos entornos y afrontar nuevos retos.
